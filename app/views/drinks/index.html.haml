@@ -7,6 +7,7 @@
   %tbody
     - @drinks.each do |drink|
       %tr
+        %td= drink.name
         %td= link_to 'Show', drink
         %td= link_to 'Edit', edit_drink_path(drink)
         %td= link_to 'Destroy', drink, method: :delete, data: { confirm: 'Are you sure?' }
