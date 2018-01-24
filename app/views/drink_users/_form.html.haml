@@ -1,0 +1,11 @@
+= form_for(drink_user) do |f|
+  - if drink_user.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(drink_user.errors.count, "error")
+        prohibited this drink_user from being saved:
+      %ul
+        - drink_user.errors.full_messages.each do |message|
+          %li= message
+  .actions
+    = f.submit
