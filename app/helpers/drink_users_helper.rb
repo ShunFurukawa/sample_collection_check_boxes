@@ -1,0 +1,2 @@
+module DrinkUsersHelper
+end

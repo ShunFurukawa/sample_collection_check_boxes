@@ -1,0 +1,2 @@
+class DrinkUser < ApplicationRecord
+end
