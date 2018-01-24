@@ -10,5 +10,9 @@
   .field
     = f.label :name
     = f.text_field :name
+
+    = f.collection_check_boxes :drink_ids, @drinks, :id, :name, include_hidden: false do |b|
+      = b.label { b.check_box + b.text }
+
   .actions
     = f.submit
