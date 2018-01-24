@@ -1,6 +1,6 @@
 class DrinkUser < ApplicationRecord
 
-  belongs_to :user
-  belongs_to :drink
+  belongs_to :user, optional: true
+  belongs_to :drink, optional: true
 
 end
